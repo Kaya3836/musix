@@ -1,0 +1,13 @@
+
+
+.SpotifyBody {
+    display: grid;
+    grid-template-rows: 15vh 85vh;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(130,35,200,1) 100%);
+}
+/* .body {
+
+} */

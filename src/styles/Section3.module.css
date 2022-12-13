@@ -1,0 +1,45 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../assets/back.jpg);
+    background-size: cover;
+    padding: 50px 50px;
+}
+.input {
+    width: 350px !important;
+    height: 70px;
+    border-radius: 50px;
+   
+}
+.input input {
+    background-color: aqua;
+    border-radius: 50px;
+    background-color: transparent !important;
+    border: 1px solid whitesmoke !important;
+    padding: 10px 30px;
+    font-size: 18px !important;
+    color: whitesmoke !important ;
+}
+.button {
+    border-top-right-radius: 50% !important;
+    border-bottom-right-radius: 50% !important;
+    width: 70px;
+    background-color: transparent !important;
+    border: 1px solid whitesmoke !important;
+    font-weight: bold;
+}
+.search {
+    width: 20px;
+}
+.input input::placeholder {
+    color: whitesmoke;
+    font-size: 18px;
+}
+.album {
+    background-color: transparent !important;
+    box-shadow: 1px -1px 67px -16px rgba(255,255,255,0.75);
+}
+.card{
+    width: 120%;
+    margin: 10px;
+}

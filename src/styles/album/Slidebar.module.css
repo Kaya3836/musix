@@ -1,0 +1,29 @@
+
+.top {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: #b3b3b3;
+  width: 300px;
+  height: 100vh;
+  padding: 150px 30px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+li {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+li:hover {
+  color: white;
+}
+span {
+  font-size: 20px;
+}

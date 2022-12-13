@@ -1,0 +1,41 @@
+.container {
+    width: 100vw;
+    height: 80px;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+}
+.innercontainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 100px; 
+}
+.row {
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 19px;
+    align-items: center ;
+}
+.inner2container {
+    width: 190px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a:-webkit-any-link {
+    color: white;
+    text-decoration: none;
+}
+.logo {
+    width: 120px;
+}
+.ig {
+    width: 30px;
+}
+.fb {
+    width: 15px;
+}
+.disc {
+    width: 35px;
+}
