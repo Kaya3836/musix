@@ -1,9 +1,9 @@
 .container {
     width: 100vw;
-    height: 100vh;
-    background-image: url(../assets/back.jpg);
-    background-size: cover;
-    padding: 50px 50px;
+    height: 250vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(110,23,173,1) 100%);
+    padding: 150px 30px;
 }
 .input {
     width: 350px !important;
@@ -37,9 +37,11 @@
 }
 .album {
     background-color: transparent !important;
-    box-shadow: 1px -1px 67px -16px rgba(255,255,255,0.75);
+    box-shadow: 1px -1px 45px -16px rgba(255,255,255,0.75);
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 .card{
-    width: 120%;
-    margin: 10px;
+    width: 100%;
+    margin: 0;
 }

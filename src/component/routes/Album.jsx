@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "../styles/Section3.module.css";
+import styles from "../../styles/Album.module.css";
 import {
   Container,
   InputGroup,
@@ -9,9 +9,9 @@ import {
   Card,
 } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import searchIcon from "../assets/search.png"
+import searchIcon from "../../assets/search.png"
 
-export const Section3 = (props) => {
+export const Album = (props) => {
   const CLIENT_ID = "0bf06af3e00842d39ba8c17f6c945b1a";
   const CLIENT_SECRET = "d7514d90abc7451eb84b8afc0121da62";
   const baseUrl = "https://accounts.spotify.com/api/token";
@@ -64,7 +64,7 @@ export const Section3 = (props) => {
       "https://api.spotify.com/v1/artists/" +
         artistID +
         "/albums" +
-        "?include_groups=album&market=US&limit=8",
+        "?include_groups=album&market=US&limit=24",
       artistParameters
     )
       .then((response) => response.json())
@@ -98,8 +98,7 @@ export const Section3 = (props) => {
         </Container>
         <Container>
           <Row
-            style={{ width: "100%" }}
-            className={`mx-2 row row-cols-4 ${styles.card}`}
+            className={` mt-5 row-cols-5 ${styles.card}`}
           >
             {albums.map((album, i) => {
               console.log(album);
@@ -107,7 +106,7 @@ export const Section3 = (props) => {
                 <Card className={`gx-5 ${styles.album}`}>
                   <Card.Img src={album.images[0].url} />
                   <Card.Body>
-                    <Card.Title>{album.name}</Card.Title>
+                    <Card.Title style={{color: "white"}}>{album.name}</Card.Title>
                   </Card.Body>
                 </Card>
               );

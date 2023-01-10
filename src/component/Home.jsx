@@ -1,10 +1,29 @@
 import styles from "../styles/Home.module.css"
 import logo from "../assets/logo.png"
 import concert from "../assets/concert.jpg"
-import { Section3 } from "./Section3"
-
+import { useEffect } from "react"
+import { onAuthStateChanged } from "firebase/auth"
+import { auth } from "../config/Firebase"
+import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 export const Home = (props) => {
+    // const [user, setUser] = useState();
+
+    // const navigate = useNavigate();
+
+    // useEffect(() => {
+    //     onAuthStateChanged(auth, (user) => {
+    //         if (user) {
+    //             console.log(user)
+    //             setUser(user);
+    //         } else {
+    //             console.log(user)
+    //             navigate("/login");
+    //             setUser(null)
+    //         }
+    //     })
+    // },[])
     return (
         <>
 {/* SECTION1 */}
@@ -19,8 +38,6 @@ export const Home = (props) => {
                 <button>Learn more</button>
             </div>
         </div>
-{/* SECTION3 */}
-        <Section3/>
         </>
     )
 }
